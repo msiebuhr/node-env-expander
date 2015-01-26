@@ -1,5 +1,5 @@
 {
-  "name": "env-expand",
+  "name": "env-expander",
   "version": "0.0.1",
   "description": "Enrich a configuration-object with environment variables",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github.com/msiebuhr/node-env-expand"
+    "url": "github.com/msiebuhr/node-env-expander"
   },
   "keywords": [
     "conf",
@@ -17,9 +17,9 @@
   "author": "Morten Siebuhr",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/msiebuhr/node-env-expand/issues"
+    "url": "https://github.com/msiebuhr/node-env-expander/issues"
   },
-  "homepage": "https://github.com/msiebuhr/node-env-expand",
+  "homepage": "https://github.com/msiebuhr/node-env-expander",
   "devDependencies": {
     "mocha": "^2.1.0",
     "unexpected": "^5.7.1"

@@ -3,18 +3,18 @@
  * $FOO=bar + { "foo": "ENV:$FOO" } -> { "foo": "bar" }
  */
 
-function expand(obj, options) {
+function expander(obj, options) {
     options.env = options.env || process.env;
 
     // Iterate over arrays
     if (Array.isArray(obj)) {
-        return obj.map(function (val) { return expand(val, options); });
+        return obj.map(function (val) { return expander(val, options); });
     }
 
     // Iterate over object
     if (typeof obj === 'object' && obj !== null) {
         Object.keys(obj).forEach(function (key) {
-            obj[key] = expand(obj[key], options);
+            obj[key] = expander(obj[key], options);
         });
 
         return obj;
@@ -36,4 +36,4 @@ function expand(obj, options) {
     return obj;
 };
 
-module.exports.expand = expand;
+module.exports.expander = expander;

@@ -1,5 +1,5 @@
-env-expand
-==========
+env-expander
+============
 
 Enriches your configuration with environment variables;
 
@@ -8,7 +8,7 @@ Enriches your configuration with environment variables;
 
 + 
 
-    envExpand.expand({
+    envExpander.expand({
         "username": "ENV:$USERNAME",
         "password": "ENV:$PASSWORD",
         "loginUrl": "https://api.example.com/login"
