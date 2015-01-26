@@ -3,10 +3,7 @@ env-expander
 
 Enriches your configuration with environment variables;
 
-    $USERNAME=root
-    $PASSWORD=123456
-
-+ 
+Given the environment variables `$USERNAME=root` and `$PASSWORD=123456`, the following configuration
 
     envExpander.expand({
         "username": "ENV:$USERNAME",
@@ -14,7 +11,7 @@ Enriches your configuration with environment variables;
         "loginUrl": "https://api.example.com/login"
     });
 
-=
+Will expand to this object:
 
     {
         "username": "root",
